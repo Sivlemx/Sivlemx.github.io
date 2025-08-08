@@ -79,3 +79,23 @@ a:hover {
 .contact-info a {
     text-decoration: none;
 }
+
+/* --- Estilo para el Botón de Descarga --- */
+
+.boton-descarga {
+    display: inline-block;
+    background-color: #00aaff; /* Color de acento */
+    color: #ffffff; /* Texto blanco */
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px; /* Espacio para separarlo de la línea de tiempo */
+    transition: background-color 0.3s;
+}
+
+.boton-descarga:hover {
+    background-color: #0088cc; /* Un tono más oscuro al pasar el mouse */
+    color: #ffffff;
+}
