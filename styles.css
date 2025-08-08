@@ -1,101 +1,71 @@
-/* Estilos Globales */
+/* Paleta de colores */
+:root {
+    --color-principal: #0a3d62; /* Azul profundo serio */
+    --color-acento: #00a6a6;    /* Turquesa neuro */
+    --color-fondo: #fafafa;     /* Fondo claro */
+    --color-texto: #1a1a1a;     /* Texto principal */
+}
+
+/* ===== Estilos globales ===== */
 body {
-    background-color: #1a1a1a; /* Fondo oscuro */
-    color: #e0e0e0; /* Texto principal claro */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.7;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-/* Menú de Navegación */
+/* ===== Navegación ===== */
 nav {
-    padding: 20px 0;
-    border-bottom: 1px solid #333;
+    background-color: var(--color-principal);
+    padding: 0.8rem;
     text-align: center;
-    margin-bottom: 40px;
 }
 
 nav a {
-    margin: 0 20px;
+    color: white;
     text-decoration: none;
-    color: #00aaff; /* Un azul vibrante como acento */
+    margin: 0 1rem;
     font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
-nav a:hover, nav a.active {
-    color: #ffffff; /* Blanco al pasar el mouse o si está activo */
+nav a:hover,
+nav a.active {
+    color: var(--color-acento);
+    border-bottom: 2px solid var(--color-acento);
 }
 
-/* Encabezados */
-h1, h2 {
-    color: #ffffff;
-    border-bottom: 2px solid #00aaff;
-    padding-bottom: 10px;
-}
-
-h1 { font-size: 3em; }
-h2 { font-size: 1.8em; }
-
-/* Enlaces Generales */
-a {
-    color: #00aaff;
-}
-a:hover {
-    color: #33ccff;
-}
-
-/* Estilos Específicos de Página */
-.inicio-flex {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.inicio-img {
-    max-width: 300px;
-    border-radius: 50%; /* Foto redonda para un look moderno */
-    border: 3px solid #00aaff;
-}
-
-.publication {
-    margin-bottom: 1.5em;
-    padding-left: 20px;
-    border-left: 3px solid #333;
-}
-
-.research-topic {
-    margin-bottom: 2.5em;
-}
-
-.contact-info a {
-    text-decoration: none;
-}
-
-/* --- Estilo para el Botón de Descarga --- */
-
+/* ===== Botones ===== */
+button,
 .boton-descarga {
-    display: inline-block;
-    background-color: #00aaff; /* Color de acento */
-    color: #ffffff; /* Texto blanco */
-    padding: 12px 25px;
-    border-radius: 5px;
+    background-color: var(--color-principal);
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
     text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 40px; /* Espacio para separarlo de la línea de tiempo */
+    display: inline-block;
     transition: background-color 0.3s;
 }
 
+button:hover,
 .boton-descarga:hover {
-    background-color: #0088cc; /* Un tono más oscuro al pasar el mouse */
-    color: #ffffff;
+    background-color: var(--color-acento);
+    color: white;
+}
+
+/* ===== Títulos ===== */
+h1, h2, h3 {
+    color: var(--color-principal);
+}
+
+/* ===== Enlaces ===== */
+a {
+    color: var(--color-acento);
+}
+
+a:hover {
+    text-decoration: underline;
 }
