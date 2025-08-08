@@ -1,0 +1,81 @@
+/* Estilos Globales */
+body {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto principal claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Menú de Navegación */
+nav {
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #00aaff; /* Un azul vibrante como acento */
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #ffffff; /* Blanco al pasar el mouse o si está activo */
+}
+
+/* Encabezados */
+h1, h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 1.8em; }
+
+/* Enlaces Generales */
+a {
+    color: #00aaff;
+}
+a:hover {
+    color: #33ccff;
+}
+
+/* Estilos Específicos de Página */
+.inicio-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.inicio-img {
+    max-width: 300px;
+    border-radius: 50%; /* Foto redonda para un look moderno */
+    border: 3px solid #00aaff;
+}
+
+.publication {
+    margin-bottom: 1.5em;
+    padding-left: 20px;
+    border-left: 3px solid #333;
+}
+
+.research-topic {
+    margin-bottom: 2.5em;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
