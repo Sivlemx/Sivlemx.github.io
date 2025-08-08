@@ -47,101 +47,233 @@
 
     <main>
       <header>
-        <h1>Publicaciones</h1>
-        <p>Selección de artículos arbitrados, actas y textos de divulgación. Enfoque en emoción no verbal (voz/rostro), etología humana y análisis de datos reproducible.</p>
-      </header>
+  <h1>Publicaciones</h1>
+  <p>Artículos arbitrados, actas y divulgación. Puedes copiar la cita o el BibTeX, o descargar el .bib con todo.</p>
+  <div class="pub-actions">
+    <button id="download-bib">Descargar .bib (todas)</button>
+  </div>
+</header>
 
-      <!-- Artículos en revistas indexadas -->
-      <section aria-labelledby="indexadas">
-        <h2 id="indexadas">Artículos en revistas indexadas</h2>
-        <ol class="pub-list">
-          <li>
-            Villanueva‑Valle, J., Díaz, J‑L., Jiménez, S., Rodríguez‑Delgado, A., Arango de Montis, I., León‑Bernal, A., Miranda‑Terres, E., & Muñoz‑Delgado, J. (2021).
-            <strong>Facial and Vocal Expressions During Clinical Interviews Suggest an Emotional Modulation Paradox in Borderline Personality Disorder: An Explorative Study.</strong>
-            <em>Frontiers in Psychiatry, 12</em>, 628397. <a href="https://doi.org/10.3389/fpsyt.2021.628397">doi:10.3389/fpsyt.2021.628397</a>
-          </li>
-          <li>
-            Arango, I., Miranda, E., Sánchez Ferrer, J. C., Fresán, A., Reyes Ortega, M. A., Vargas, A. N., <strong>Villanueva‑Valle, J.</strong>, Muñoz‑Delgado, J., & Robles, R. (2019).
-            <strong>Changes in facial emotion expression during a psychotherapeutic intervention for patients with borderline personality disorder.</strong>
-            <em>Journal of Psychiatric Research, 114</em>, 126–132. <a href="https://doi.org/10.1016/j.jpsychires.2019.04.026">doi:10.1016/j.jpsychires.2019.04.026</a>
-          </li>
-          <li>
-            Muñoz‑Delgado, J., Link, A., Montilla, S. O., Jiménez, S., De Aquino, I., <strong>Villanueva‑Valle, J.</strong>, & Erkert, H. G. (2021).
-            <strong>Lunar periodic modulation of the circadian activity rhythm in a wild North Colombian night monkey (Aotus griseimembra).</strong>
-            <em>Chronobiology International</em>. <a href="https://doi.org/10.1080/07420528.2021.1903029">doi:10.1080/07420528.2021.1903029</a>
-          </li>
-          <li>
-            Paas‑Oliveros, L. K., <strong>Villanueva‑Valle, J.</strong>, González‑Arredondo, S. I., Fresán, A., Arango de Montis, I., Brüne, M., & Muñoz‑Delgado, J. (2015).
-            <strong>Study of application and validation of the Ethological Coding System for Interviews (ECSI).</strong>
-            <em>Salud Mental, 38(1)</em>, 41–46.
-          </li>
-          <li>
-            Paas‑Oliveros, L. K., <strong>Villanueva‑Valle, J.</strong>, González‑Arredondo, S. I., Arango de Montis, I., Brüne, M., & Muñoz‑Delgado, J. (2015).
-            <strong>Estudio de traducción y validez del ECSI.</strong>
-            <em>Salud Mental, 38(1)</em>, 45–50.
-          </li>
-          <li>
-            Arango de Montis, I., Fresán, A., Brüne, M., Ortega‑Font, V., <strong>Villanueva‑Valle, J.</strong>, Saracco, R., & Muñoz‑Delgado, J. (2014).
-            <strong>Evaluation of the capacity to recognize facial emotion in psychiatry residents throughout three years of training.</strong>
-            <em>Salud Mental, 37(6)</em>, 455–460.
-          </li>
-          <li>
-            Márquez‑Arias, A., Santillán‑Doherty, A. M., Arenas‑Rosas, R. V., Gasca‑Matías, M. P., Muñoz‑Delgado, J., & <strong>Villanueva‑Valle, J.</strong> (2014).
-            <strong>Efecto del enriquecimiento ambiental en un grupo de monos araña (Ateles geoffroyi) en cautiverio.</strong>
-            <em>Salud Mental, 37(5)</em>, 437–442.
-          </li>
-          <li>
-            Arango de Montis, I., Brüne, M., Fresán, A., Ortega‑Font, V., <strong>Villanueva‑Valle, J.</strong>, Saracco, R., & Muñoz‑Delgado, J. (2013).
-            <strong>Recognition of facial expression of the emotions and their relation to attachment styles and psychiatric symptoms.</strong>
-            <em>Salud Mental, 36(2)</em>, 95–100.
-          </li>
-          <li>
-            Muñoz‑Delgado, J., Montoya, B., Santillán‑Doherty, A. M., Arenas‑Rosas, R. V., Piñeiro, M., <strong>Villanueva‑Valle, J.</strong>, & Moreno, C. B. (2012).
-            <strong>El lenguaje corporal de las pacientes con fobia social facilita la evaluación completa de la patología.</strong>
-            <em>Salud (i) Ciencia, 19(5)</em>, 424–426.
-          </li>
-        </ol>
-      </section>
+<section aria-labelledby="indexadas">
+  <h2 id="indexadas">Artículos en revistas indexadas</h2>
+  <ol class="pub-list">
 
-      <!-- Actas, congresos y otros -->
-      <section aria-labelledby="actas">
-        <h2 id="actas">Actas y trabajos en congreso</h2>
-        <ul class="pub-list">
-          <li>
-            Ruelas‑Mejía, J. E., Martínez‑Bórquez, A., Mendoza‑Gómez, R., <strong>Villanueva‑Valle, J.</strong>, Mena‑Avilés, E. (2024).
-            <strong>Enhancing the educational displacement in early semester engineering students through innovative gamification.</strong>
-            <em>Engineering Education Conference</em>.
-          </li>
-        </ul>
-      </section>
+    <li data-bibtex="@article{VillanuevaValle2021Frontiers,
+  title={Facial and Vocal Expressions During Clinical Interviews Suggest an Emotional Modulation Paradox in Borderline Personality Disorder: An Explorative Study},
+  author={Villanueva-Valle, Javier and Díaz, José-Luis and Jiménez, Said and Rodríguez-Delgado, Andrés and Arango de Montis, Iván and León-Bernal, Areli and Miranda-Terres, Edgar and Muñoz-Delgado, Jairo},
+  journal={Frontiers in Psychiatry},
+  year={2021},
+  volume={12},
+  pages={628397},
+  doi={10.3389/fpsyt.2021.628397}
+}" data-apa="Villanueva‑Valle, J., Díaz, J.‑L., Jiménez, S., Rodríguez‑Delgado, A., Arango de Montis, I., León‑Bernal, A., Miranda‑Terres, E., & Muñoz‑Delgado, J. (2021). Facial and vocal expressions during clinical interviews suggest an emotional modulation paradox in borderline personality disorder: An explorative study. Frontiers in Psychiatry, 12, 628397. https://doi.org/10.3389/fpsyt.2021.628397">
+      <p><strong>Villanueva‑Valle, J.</strong>, Díaz, J.‑L., Jiménez, S., Rodríguez‑Delgado, A., Arango de Montis, I., León‑Bernal, A., Miranda‑Terres, E., & Muñoz‑Delgado, J. (2021). <em>Frontiers in Psychiatry</em>.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
 
-      <!-- Divulgación -->
-      <section aria-labelledby="divulgacion">
-        <h2 id="divulgacion">Divulgación</h2>
-        <ul class="pub-list">
-          <li>
-            <strong>Villanueva‑Valle, J.</strong>, &amp; Ordoñez‑Gómez, J. D. (2012).
-            <strong>¿Cómo expresamos nuestras emociones?</strong>
-            <em>Intersección, 1(1)</em>, 20–22.
-          </li>
-        </ul>
-      </section>
+    <li data-bibtex="@article{Arango2019JPR,
+  title={Changes in facial emotion expression during a psychotherapeutic intervention for patients with borderline personality disorder},
+  author={Arango, Iván and Miranda, Edgar and Sánchez Ferrer, Juan C. and Fresán, Ana and Reyes Ortega, María A. and Vargas, Alejandro N. and Villanueva-Valle, Javier and Muñoz-Delgado, Jairo and Robles, Ricardo},
+  journal={Journal of Psychiatric Research},
+  year={2019},
+  volume={114},
+  pages={126--132},
+  doi={10.1016/j.jpsychires.2019.04.026}
+}" data-apa="Arango, I., Miranda, E., Sánchez Ferrer, J. C., Fresán, A., Reyes Ortega, M. A., Vargas, A. N., Villanueva‑Valle, J., Muñoz‑Delgado, J., & Robles, R. (2019). Changes in facial emotion expression during a psychotherapeutic intervention for patients with borderline personality disorder. Journal of Psychiatric Research, 114, 126–132. https://doi.org/10.1016/j.jpsychires.2019.04.026">
+      <p>Arango, I., Miranda, E., Sánchez Ferrer, J. C., Fresán, A., Reyes Ortega, M. A., Vargas, A. N., <strong>Villanueva‑Valle, J.</strong>, Muñoz‑Delgado, J., & Robles, R. (2019). <em>Journal of Psychiatric Research</em>.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
 
-      <!-- Revisión por pares -->
-      <section aria-labelledby="revisor">
-        <h2 id="revisor">Revisión por pares (peer review)</h2>
-        <ul class="pub-list">
-          <li>
-            van Wyk, M., Solms, M., & Lipinska, G. (2024). <em>A novel method for objectively classifying sequential emotion within dreams...</em> Frontiers in Psychology. <strong>Revisor:</strong> J. Villanueva‑Valle.
-          </li>
-          <li>
-            Hirao, N., Koizumi, K., Ikeda, H., & Ohira, H. (2021). <em>Reliability of Online Surveys in Investigating Perceptions and Impressions of Faces.</em> Frontiers in Psychology. <strong>Revisor:</strong> J. Villanueva‑Valle.
-          </li>
-          <li>
-            Koizumi, K., Nagashima, M., Hirao, N., & Ohira, H. (in press). <em>Simulated intra‑individual skin color changes...</em> Frontiers in Psychology. <strong>Editor invitado:</strong> J. Villanueva‑Valle.
-          </li>
-        </ul>
-      </section>
+    <li data-bibtex="@article{MunozDelgado2021Chronobiol,
+  title={Lunar periodic modulation of the circadian activity rhythm in a wild North Colombian night monkey (Aotus griseimembra)},
+  author={Muñoz-Delgado, Jairo and Link, Andrés and Montilla, S. O. and Jiménez, Said and De Aquino, I. and Villanueva-Valle, Javier and Erkert, Hans G.},
+  journal={Chronobiology International},
+  year={2021},
+  doi={10.1080/07420528.2021.1903029}
+}" data-apa="Muñoz‑Delgado, J., Link, A., Montilla, S. O., Jiménez, S., De Aquino, I., Villanueva‑Valle, J., & Erkert, H. G. (2021). Lunar periodic modulation of the circadian activity rhythm in a wild North Colombian night monkey (Aotus griseimembra). Chronobiology International. https://doi.org/10.1080/07420528.2021.1903029">
+      <p>Muñoz‑Delgado, J., Link, A., Montilla, S. O., Jiménez, S., De Aquino, I., <strong>Villanueva‑Valle, J.</strong>, & Erkert, H. G. (2021). <em>Chronobiology International</em>.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+
+    <li data-bibtex="@article{PaasOliveros2015ECSI1,
+  title={Study of application and validation of the Ethological Coding System for Interviews (ECSI)},
+  author={Paas-Oliveros, L. K. and Villanueva-Valle, J. and González-Arredondo, S. I. and Fresán, A. and Arango de Montis, I. and Brüne, M. and Muñoz-Delgado, J.},
+  journal={Salud Mental},
+  year={2015},
+  volume={38},
+  number={1},
+  pages={41--46}
+}" data-apa="Paas‑Oliveros, L. K., Villanueva‑Valle, J., González‑Arredondo, S. I., Fresán, A., Arango de Montis, I., Brüne, M., & Muñoz‑Delgado, J. (2015). Study of application and validation of the Ethological Coding System for Interviews (ECSI). Salud Mental, 38(1), 41–46.">
+      <p>Paas‑Oliveros, L. K., <strong>Villanueva‑Valle, J.</strong>, González‑Arredondo, S. I., Fresán, A., Arango de Montis, I., Brüne, M., & Muñoz‑Delgado, J. (2015). <em>Salud Mental, 38(1)</em>.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+
+    <li data-bibtex="@article{Arango2014Residents,
+  title={Evaluation of the capacity to recognize facial emotion in psychiatry residents throughout three years of training},
+  author={Arango de Montis, I. and Fresán, A. and Brüne, M. and Ortega-Font, V. and Villanueva-Valle, J. and Saracco, R. and Muñoz-Delgado, J.},
+  journal={Salud Mental},
+  year={2014},
+  volume={37},
+  number={6},
+  pages={455--460}
+}" data-apa="Arango de Montis, I., Fresán, A., Brüne, M., Ortega‑Font, V., Villanueva‑Valle, J., Saracco, R., & Muñoz‑Delgado, J. (2014). Evaluation of the capacity to recognize facial emotion in psychiatry residents throughout three years of training. Salud Mental, 37(6), 455–460.">
+      <p>Arango de Montis, I., Fresán, A., Brüne, M., Ortega‑Font, V., <strong>Villanueva‑Valle, J.</strong>, Saracco, R., & Muñoz‑Delgado, J. (2014). <em>Salud Mental, 37(6)</em>.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+
+    <li data-bibtex="@article{MarquezArias2014Ateles,
+  title={Efecto del enriquecimiento ambiental en un grupo de monos araña (Ateles geoffroyi) en cautiverio},
+  author={Márquez-Arias, A. and Santillán-Doherty, A. M. and Arenas-Rosas, R. V. and Gasca-Matías, M. P. and Muñoz-Delgado, J. and Villanueva-Valle, J.},
+  journal={Salud Mental},
+  year={2014},
+  volume={37},
+  number={5},
+  pages={437--442}
+}" data-apa="Márquez‑Arias, A., Santillán‑Doherty, A. M., Arenas‑Rosas, R. V., Gasca‑Matías, M. P., Muñoz‑Delgado, J., & Villanueva‑Valle, J. (2014). Efecto del enriquecimiento ambiental en un grupo de monos araña (Ateles geoffroyi) en cautiverio. Salud Mental, 37(5), 437–442.">
+      <p>Márquez‑Arias, A., Santillán‑Doherty, A. M., Arenas‑Rosas, R. V., Gasca‑Matías, M. P., Muñoz‑Delgado, J., & <strong>Villanueva‑Valle, J.</strong> (2014). <em>Salud Mental, 37(5)</em>.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+
+    <li data-bibtex="@article{Arango2013Attachment,
+  title={Recognition of facial expression of the emotions and their relation to attachment styles and psychiatric symptoms. Preliminary study on Psychiatric Residents},
+  author={Arango de Montis, I. and Brüne, M. and Fresán, A. and Ortega-Font, V. and Villanueva-Valle, J. and Saracco, R. and Muñoz-Delgado, J.},
+  journal={Salud Mental},
+  year={2013},
+  volume={36},
+  number={2},
+  pages={95--100}
+}" data-apa="Arango de Montis, I., Brüne, M., Fresán, A., Ortega‑Font, V., Villanueva‑Valle, J., Saracco, R., & Muñoz‑Delgado, J. (2013). Recognition of facial expression of the emotions and their relation to attachment styles and psychiatric symptoms. Salud Mental, 36(2), 95–100.">
+      <p>Arango de Montis, I., Brüne, M., Fresán, A., Ortega‑Font, V., <strong>Villanueva‑Valle, J.</strong>, Saracco, R., & Muñoz‑Delgado, J. (2013). <em>Salud Mental, 36(2)</em>.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+
+    <li data-bibtex="@article{MunozDelgado2012Fobia,
+  title={El lenguaje corporal de las pacientes con fobia social facilita la evaluación completa de la patología},
+  author={Muñoz-Delgado, J. and Montoya, B. and Santillán-Doherty, A. M. and Arenas-Rosas, R. V. and Piñeiro, M. and Villanueva-Valle, J. and Moreno, C. B.},
+  journal={Salud (i) Ciencia},
+  year={2012},
+  volume={19},
+  number={5},
+  pages={424--426}
+}" data-apa="Muñoz‑Delgado, J., Montoya, B., Santillán‑Doherty, A. M., Arenas‑Rosas, R. V., Piñeiro, M., Villanueva‑Valle, J., & Moreno, C. B. (2012). El lenguaje corporal de las pacientes con fobia social facilita la evaluación completa de la patología. Salud (i) Ciencia, 19(5), 424–426.">
+      <p>Muñoz‑Delgado, J., Montoya, B., Santillán‑Doherty, A. M., Arenas‑Rosas, R. V., Piñeiro, M., <strong>Villanueva‑Valle, J.</strong>, & Moreno, C. B. (2012). <em>Salud (i) Ciencia, 19(5)</em>.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+
+  </ol>
+</section>
+
+<section aria-labelledby="actas">
+  <h2 id="actas">Actas y trabajos en congreso</h2>
+  <ul class="pub-list">
+    <li data-bibtex="@inproceedings{RuelasMejia2024EEC,
+  title={Enhancing the educational displacement in early semester engineering students through innovative gamification: A case study at Tecnológico de Monterrey, Campus León},
+  author={Ruelas-Mejía, J. E. and Martínez-Bórquez, A. and Mendoza-Gómez, R. and Villanueva-Valle, J. and Mena-Avilés, E.},
+  booktitle={Engineering Education Conference},
+  year={2024}
+}" data-apa="Ruelas‑Mejía, J. E., Martínez‑Bórquez, A., Mendoza‑Gómez, R., Villanueva‑Valle, J., & Mena‑Avilés, E. (2024). Enhancing the educational displacement in early semester engineering students through innovative gamification. En Engineering Education Conference.">
+      <p>Ruelas‑Mejía, J. E., Martínez‑Bórquez, A., Mendoza‑Gómez, R., <strong>Villanueva‑Valle, J.</strong>, & Mena‑Avilés, E. (2024). <em>Engineering Education Conference</em>.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section aria-labelledby="divulgacion">
+  <h2 id="divulgacion">Divulgación</h2>
+  <ul class="pub-list">
+    <li data-bibtex="@article{VillanuevaValle2012Interseccion,
+  title={¿Cómo expresamos nuestras emociones?},
+  author={Villanueva-Valle, Javier and Ordoñez-Gómez, J. D.},
+  journal={Intersección},
+  year={2012},
+  volume={1},
+  number={1},
+  pages={20--22}
+}" data-apa="Villanueva‑Valle, J., & Ordoñez‑Gómez, J. D. (2012). ¿Cómo expresamos nuestras emociones? Intersección, 1(1), 20–22.">
+      <p><strong>Villanueva‑Valle, J.</strong>, & Ordoñez‑Gómez, J. D. (2012). <em>Intersección, 1(1)</em>, 20–22.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section aria-labelledby="revisor">
+  <h2 id="revisor">Revisión por pares (peer review)</h2>
+  <ul class="pub-list">
+    <li data-bibtex="@article{vanWyk2024FrontPsychol,
+  title={A novel method for objectively classifying sequential emotion within dreams: a proof-of-concept pilot study},
+  author={van Wyk, M. and Solms, M. and Lipinska, G.},
+  journal={Frontiers in Psychology},
+  year={2024},
+  volume={15},
+  pages={1393913},
+  note={Reviewed by Javier Villanueva-Valle}
+}" data-apa="van Wyk, M., Solms, M., & Lipinska, G. (2024). A novel method for objectively classifying sequential emotion within dreams: A proof‑of‑concept pilot study. Frontiers in Psychology, 15, 1393913. Revisión: J. Villanueva‑Valle.">
+      <p>van Wyk, M., Solms, M., & Lipinska, G. (2024). <em>Frontiers in Psychology</em>. <strong>Revisión:</strong> J. Villanueva‑Valle.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+    <li data-bibtex="@article{Hirao2021FrontPsychol,
+  title={Reliability of Online Surveys in Investigating Perceptions and Impressions of Faces},
+  author={Hirao, N. and Koizumi, K. and Ikeda, H. and Ohira, H.},
+  journal={Frontiers in Psychology},
+  year={2021},
+  volume={12},
+  pages={733405},
+  note={Reviewed by Javier Villanueva-Valle}
+}" data-apa="Hirao, N., Koizumi, K., Ikeda, H., & Ohira, H. (2021). Reliability of online surveys in investigating perceptions and impressions of faces. Frontiers in Psychology, 12, 733405. Revisión: J. Villanueva‑Valle.">
+      <p>Hirao, N., Koizumi, K., Ikeda, H., & Ohira, H. (2021). <em>Frontiers in Psychology</em>. <strong>Revisión:</strong> J. Villanueva‑Valle.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+    <li data-bibtex="@article{KoizumiInPressFrontPsychol,
+  title={Simulated intra-individual skin color changes and their impact on facial attractiveness across Japanese, Chinese, and Caucasian faces},
+  author={Koizumi, K. and Nagashima, M. and Hirao, N. and Ohira, H.},
+  journal={Frontiers in Psychology},
+  year={in press},
+  note={Guest editor: Javier Villanueva-Valle}
+}" data-apa="Koizumi, K., Nagashima, M., Hirao, N., & Ohira, H. (en prensa). Simulated intra‑individual skin color changes and their impact on facial attractiveness across Japanese, Chinese, and Caucasian faces. Frontiers in Psychology. Editor invitado: J. Villanueva‑Valle.">
+      <p>Koizumi, K., Nagashima, M., Hirao, N., & Ohira, H. (en prensa). <em>Frontiers in Psychology</em>. <strong>Editor invitado:</strong> J. Villanueva‑Valle.</p>
+      <div class="pub-actions">
+        <button class="copy-apa">Copiar cita (APA)</button>
+        <button class="copy-bib">Copiar BibTeX</button>
+      </div>
+    </li>
+  </ul>
+</section>
 
       <!-- Identificadores -->
       <section aria-labelledby="perfiles">
