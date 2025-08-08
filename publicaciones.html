@@ -8,6 +8,15 @@
   <link rel="icon" type="image/png" href="jvv1.png" />
   <link rel="stylesheet" href="styles.css" />
 
+<style>
+  .pub-list{list-style:decimal; padding-left:1.2rem}
+  .pub-actions{display:flex; gap:.5rem; flex-wrap:wrap; margin:.5rem 0 1rem}
+  .pub-actions button{padding:.35rem .6rem; border:1px solid #ccc; border-radius:.4rem; cursor:pointer; background:#fff}
+  .pub-actions button:hover{background:#f6f6f6}
+  .pub-actions .ok{border-color:#4caf50}
+</style>
+
+
   <!-- Datos estructurados básicos -->
   <script type="application/ld+json">
   {
@@ -146,5 +155,35 @@
       </section>
     </main>
   </div>
+<script>
+function copyText(txt, btn){
+  navigator.clipboard.writeText(txt).then(()=>{
+    const prev = btn.textContent;
+    btn.textContent = "¡Copiado!";
+    btn.classList.add("ok");
+    setTimeout(()=>{btn.textContent = prev; btn.classList.remove("ok");}, 1200);
+  });
+}
+
+function onCopy(e, type){
+  const wrap = e.target.closest("[data-bibtex]");
+  if(!wrap) return;
+  const txt = wrap.dataset[type];
+  copyText(txt, e.target);
+}
+
+document.addEventListener("click", (e)=>{
+  if(e.target.matches(".copy-bib")) onCopy(e, "bibtex");
+  if(e.target.matches(".copy-apa")) onCopy(e, "apa");
+  if(e.target.matches("#download-bib")){
+    const chunks = [...document.querySelectorAll("[data-bibtex]")].map(n=>n.dataset.bibtex);
+    const blob = new Blob([chunks.join("\n\n")], {type:"text/plain"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "javier_villanueva_valle_publicaciones.bib";
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+});
+</script>
 </body>
 </html>
