@@ -3,39 +3,55 @@
 <head>
     <link rel="icon" type="image/png" href="jvv1.png">
     <meta charset="UTF-8">
-    <title>Contacto - Javier Villanueva-Valle</title>
-
+    <title>Contacto — Javier Villanueva-Valle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Información de contacto y formulario para conectar con Javier Villanueva-Valle. Colaboraciones, consultas y proyectos académicos.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <nav>
-            <a href="index.html" class="active">Inicio</a>
-            <a href="semblanza.html" class="active">Semblanza</a>
-            <a href="publicaciones.html" class="active">Publicaciones</a>
-            <a href="investigacion.html" class="active">Investigación</a>
-            <a href="trayectoria.html" class="active">Trayectoria</a>
-            <a href="contacto.html" class="active">Contacto</a>
+        <nav aria-label="Principal">
+            <a href="index.html">Inicio</a>
+            <a href="semblanza.html">Semblanza</a>
+            <a href="publicaciones.html">Publicaciones</a>
+            <a href="investigacion.html">Investigación</a>
+            <a href="trayectoria.html">Trayectoria</a>
+            <a href="contacto.html" aria-current="page" class="active">Contacto</a>
         </nav>
 
         <header>
             <h1>Contacto</h1>
-            <p>Si deseas colaborar, tienes alguna pregunta o simplemente quieres conectar, no dudes en usar los siguientes medios.</p>
+            <p>Si deseas colaborar, tienes alguna pregunta o simplemente quieres conectar, puedes usar los siguientes medios o el formulario.</p>
         </header>
 
         <main class="contact-info">
             <h2>Información Principal</h2>
-            <p>📧 **e-mail:** <a href="mailto:javier830409@gmail.com">javier830409@gmail.com</a></p>
-            <p>📱 **Teléfono móvil:** 5524995782 (solo mensajes de texto)</p>
+            <p>📧 <strong>E-mail:</strong> <a href="mailto:javier830409@gmail.com">javier830409@gmail.com</a></p>
+            <p>📱 <strong>Teléfono móvil:</strong> 5524995782 <span>(solo mensajes de texto)</span></p>
 
             <h2>Perfiles Profesionales y Académicos</h2>
             <ul class="social-links">
-                <li><a href="https://orcid.org/0000-0002-5314-2614" target="_blank">ORCID</a></li>
-                <li><a href="https://loop.frontiersin.org/people/1140322/overview" target="_blank">Loop Profile (Frontiers)</a></li>
-                <li><a href="https://www.researchgate.net/profile/Javier-Villanueva-Valle" target="_blank">ResearchGate</a></li>
-                <li><a href="https://www.webofscience.com/wos/author/record/P-6342-2019" target="_blank">Web Of Science</a></li>
-                <li><a href="https://github.com/Sivlemx" target="_blank">GitHub</a></li>
+                <li><a href="https://orcid.org/0000-0002-5314-2614" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+                <li><a href="https://loop.frontiersin.org/people/1140322/overview" target="_blank" rel="noopener noreferrer">Loop Profile (Frontiers)</a></li>
+                <li><a href="https://www.researchgate.net/profile/Javier-Villanueva-Valle" target="_blank" rel="noopener noreferrer">ResearchGate</a></li>
+                <li><a href="https://www.webofscience.com/wos/author/record/P-6342-2019" target="_blank" rel="noopener noreferrer">Web of Science</a></li>
+                <li><a href="https://github.com/Sivlemx" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
+
+            <h2>Formulario de Contacto</h2>
+            <form class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p class="form-note">Este formulario es solo ilustrativo. Para contactar, utiliza el correo o teléfono indicados arriba.</p>
         </main>
     </div>
 </body>
