@@ -185,3 +185,27 @@ ul li{margin:.3rem 0}
   .timeline-item{grid-template-columns:1fr; gap:.4rem}
   .timeline-date{border-right:none; border-bottom:2px solid var(--color-borde); padding:.2rem 0 .6rem}
 }
+
+/* Nav: resaltar la página actual */
+nav a[aria-current="page"] {
+  border-bottom: 2px solid #0E7490;
+}
+
+/* Accesibilidad: foco visible */
+a:focus {
+  outline: 2px dashed #0E7490;
+  outline-offset: 2px;
+}
+
+/* Imágenes: si agregas más, recuerda poner loading="lazy" en el HTML */
+.inicio-img { max-width: 100%; height: auto; display: block; }
+
+/* Footer sencillo */
+.site-footer {
+  margin-top: 40px;
+  padding: 16px 0;
+  border-top: 1px solid #eaeaea;
+  font-size: 0.95rem;
+  color: #374151;
+}
+.site-footer a { text-decoration: underline; }
