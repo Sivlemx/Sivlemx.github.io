@@ -44,8 +44,7 @@
 
         <main class="contact-info">
             <h2>Información Principal</h2>
-            <p>📧 <strong>E-mail:</strong> <a href="mailto:javier830409@gmail.com">javier830409@gmail.com</a></p>
-            <p>📱 <strong>Teléfono móvil:</strong> 5524995782 <span>(solo mensajes de texto)</span></p>
+            
 
             <h2>Perfiles Profesionales y Académicos</h2>
             <ul class="social-links">
@@ -57,23 +56,58 @@
             </ul>
 
             <h2>Formulario de Contacto</h2>
-            <form class="contact-form">
+            <form action="https://formspree.io/f/movlowke" method="POST" class="contact-form" id="contactForm" autocomplete="on">
+                <!-- Formspree configuración -->
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde jvv.mx">
+                <input type="hidden" name="_template" value="box">
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                <!-- Direccionando a la página de gracias -->
+                <input type="hidden" name="_next" value="/gracias.html">
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                <input type="text" id="name" name="name" autocomplete="name" aria-required="true" placeholder="Tu nombre completo" required>
 
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                <input type="email" id="email" name="email" autocomplete="email" aria-required="true" placeholder="tu@email.com" required>
 
                 <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <textarea id="message" name="message" aria-required="true" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
-            <p class="form-note">Este formulario es solo ilustrativo. Para contactar, utiliza el correo o teléfono indicados arriba.</p>
+            <div id="formStatus" role="status" aria-live="polite" style="margin-top:.6rem"></div>
+            <p class="form-note">Todas las consultas serán atendidas mediante este formulario.</p>
         </main>
     </div>
 <footer class="site-footer">
   <p>© 2025 Javier Villanueva‑Valle · <a href="contacto.html">Contacto</a></p>
 </footer>
+
+<script>
+(function(){
+  const form = document.getElementById('contactForm');
+  if(!form) return;
+  form.addEventListener('submit', async function(e){
+    // If the browser doesn't support fetch/FormData, fall back to normal POST
+    if(!window.fetch || !window.FormData){ return; }
+    e.preventDefault();
+    const status = document.getElementById('formStatus');
+    status.textContent = 'Enviando...';
+    try{
+      const data = new FormData(form);
+      const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+      if (res.ok) {
+        status.textContent = '¡Gracias! Tu mensaje fue enviado.';
+        form.reset();
+      } else {
+        const err = await res.json().catch(()=>({}));
+        status.textContent = (err && err.errors && err.errors[0] && err.errors[0].message) || 'Hubo un problema al enviar. Intenta de nuevo.';
+      }
+    }catch(err){
+      status.textContent = 'Error de red. Intenta más tarde.';
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
