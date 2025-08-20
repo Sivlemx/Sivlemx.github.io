@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Javier Villanueva-Valle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512.png">
+
+  <!-- SEO -->
+  <meta name="description" content="Contacto directo, perfiles académicos y redes de Javier Villanueva‑Valle.">
+
+  <!-- Open Graph / Web Page -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto - Javier Villanueva-Valle">
+  <meta property="og:description" content="Escríbeme: colaboración académica, investigación y proyectos.">
+  <meta property="og:image" content="https://sivlemx.github.io/android-chrome-512.png">
+  <meta property="og:url" content="https://sivlemx.github.io/contacto.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" rel="noopener noreferrer">Inicio</a>
+            <a href="semblanza.html" rel="noopener noreferrer">Semblanza</a>
+            <a href="publicaciones.html" rel="noopener noreferrer">Publicaciones</a>
+            <a href="investigacion.html" rel="noopener noreferrer">Investigación</a>
+            <a href="trayectoria.html" rel="noopener noreferrer">Trayectoria</a>
+            <a href="contacto.html" aria-current="page" rel="noopener noreferrer">Contacto</a>
+        </nav>
+
+        <header>
+            <h1>Contacto</h1>
+            <p>Si deseas colaborar, tienes alguna pregunta o simplemente quieres conectar, puedes usar los siguientes medios o el formulario.</p>
+        </header>
+
+        <main class="contact-info">
+            <h2>Información Principal</h2>
+            <p>📧 <strong>E-mail:</strong> <a href="mailto:javier830409@gmail.com">javier830409@gmail.com</a></p>
+            <p>📱 <strong>Teléfono móvil:</strong> 5524995782 <span>(solo mensajes de texto)</span></p>
+
+            <h2>Perfiles Profesionales y Académicos</h2>
+            <ul class="social-links">
+                <li><a href="https://orcid.org/0000-0002-5314-2614" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+                <li><a href="https://loop.frontiersin.org/people/1140322/overview" target="_blank" rel="noopener noreferrer">Loop Profile (Frontiers)</a></li>
+                <li><a href="https://www.researchgate.net/profile/Javier-Villanueva-Valle" target="_blank" rel="noopener noreferrer">ResearchGate</a></li>
+                <li><a href="https://www.webofscience.com/wos/author/record/P-6342-2019" target="_blank" rel="noopener noreferrer">Web of Science</a></li>
+                <li><a href="https://github.com/Sivlemx" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+
+            <h2>Formulario de Contacto</h2>
+            <form action="https://formspree.io/f/REEMPLAZA_TU_ID" method="POST" class="contact-form" id="contactForm" autocomplete="on">
+                <!-- Formspree config -->
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde jvv.mx">
+                <input type="hidden" name="_template" value="box">
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                <!-- Change this to your thank-you page if you prefer -->
+                <input type="hidden" name="_next" value="/contacto.html?enviado=1">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" autocomplete="name" aria-required="true" placeholder="Tu nombre completo" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" autocomplete="email" aria-required="true" placeholder="tu@email.com" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" aria-required="true" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="formStatus" role="status" aria-live="polite" style="margin-top:.6rem"></div>
+            <p class="form-note">Este formulario es solo ilustrativo. Para contactar, utiliza el correo o teléfono indicados arriba.</p>
+        </main>
+    </div>
+<footer class="site-footer">
+  <p>© 2025 Javier Villanueva‑Valle · <a href="contacto.html">Contacto</a></p>
+</footer>
+
+<script>
+(function(){
+  const form = document.getElementById('contactForm');
+  if(!form) return;
+  form.addEventListener('submit', async function(e){
+    // If the browser doesn't support fetch/FormData, fall back to normal POST
+    if(!window.fetch || !window.FormData){ return; }
+    e.preventDefault();
+    const status = document.getElementById('formStatus');
+    status.textContent = 'Enviando...';
+    try{
+      const data = new FormData(form);
+      const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+      if (res.ok) {
+        status.textContent = '¡Gracias! Tu mensaje fue enviado.';
+        form.reset();
+      } else {
+        const err = await res.json().catch(()=>({}));
+        status.textContent = (err && err.errors && err.errors[0] && err.errors[0].message) || 'Hubo un problema al enviar. Intenta de nuevo.';
+      }
+    }catch(err){
+      status.textContent = 'Error de red. Intenta más tarde.';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
