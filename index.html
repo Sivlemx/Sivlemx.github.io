@@ -13,16 +13,23 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512.png">
 
-    <!-- SEO -->
+    <!-- Básicos -->
     <meta name="description" content="Investigador en Neurociencias de la Conducta. Psicopatología, etología humana y ciencia de datos.">
+    <link rel="canonical" href="https://sivlemx.github.io/">
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Javier Villanueva-Valle">
-    <meta property="og:description" content="Neurociencias de la Conducta · Psicopatología · Datos">
+    <meta property="og:description" content="Neurociencias de la Conducta · Psicopatología · Datos. Exploro lo que se revela entre líneas en la experiencia emocional.">
     <meta property="og:image" content="https://sivlemx.github.io/assets/Inicio-full.webp">
-    <meta property="og:url" content="https://sivlemx.github.io/index.html">
+    <meta property="og:url" content="https://sivlemx.github.io/">
     <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Javier Villanueva-Valle">
+    <meta name="twitter:description" content="Investigador en Neurociencias de la Conducta.">
+    <meta name="twitter:image" content="https://sivlemx.github.io/assets/Inicio-full.webp">
 
     <!-- Datos estructurados -->
     <script type="application/ld+json">   
@@ -70,11 +77,14 @@
             </div>
             <div>
                 <picture>
-                  <source type="image/webp"
-                          srcset="assets/Inicio-800.webp 800w, assets/Inicio-1200.webp 1200w, assets/Inicio-1600.webp 1600w, assets/Inicio-full.webp 590w"
-                          sizes="(max-width: 640px) 92vw, (max-width: 1024px) 60vw, 600px">
-                  <img src="Inicio.jpeg" alt="Javier Villanueva-Valle" class="inicio-img" loading="eager" decoding="async">
-                  </picture>
+                  <source srcset="/assets/Inicio-full.webp" type="image/webp">
+                  <img
+                    src="/assets/img/javier-hero.jpg" 
+                    alt="Javier Villanueva-Valle presentando en congreso" 
+                    width="960" height="540"
+                    loading="lazy" decoding="async" fetchpriority="high"
+                    style="max-width:100%;height:auto;border-radius:12px;">
+                </picture>  
             </div>
         </header>
         </main>
