@@ -65,7 +65,12 @@
                 <a href="semblanza.html">Descubre más sobre mi trabajo...</a>
             </div>
             <div>
-                <img src="Inicio.jpeg" alt="Fotografía de Javier Villanueva-Valle" class="inicio-img">
+                <picture>
+                  <source type="image/webp"
+                          srcset="assets/Inicio-800.webp 800w, assets/Inicio-1200.webp 1200w, assets/Inicio-1600.webp 1600w, assets/Inicio-full.webp 590w"
+                          sizes="(max-width: 640px) 92vw, (max-width: 1024px) 60vw, 600px">
+                  <img src="Inicio.jpeg" alt="Javier Villanueva-Valle" class="inicio-img" loading="eager" decoding="async">
+                  </picture>
             </div>
         </header>
     </div>
