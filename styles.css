@@ -196,6 +196,10 @@ a:focus {
   outline: 2px dashed #0E7490;
   outline-offset: 2px;
 }
+button:focus {
+  outline: 2px dashed #0E7490;
+  outline-offset: 2px;
+}
 
 /* Imágenes: si agregas más, recuerda poner loading="lazy" en el HTML */
 .inicio-img { max-width: 100%; height: auto; display: block; }
