@@ -12,6 +12,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512.png">
+    <meta name="theme-color" content="#0f172a">
 
     <!-- Básicos -->
     <meta name="description" content="Investigador en Neurociencias de la Conducta. Psicopatología, etología humana y ciencia de datos.">
@@ -23,7 +24,7 @@
     <meta property="og:description" content="Neurociencias de la Conducta · Psicopatología · Datos. Exploro lo que se revela entre líneas en la experiencia emocional.">
     <meta property="og:image" content="https://sivlemx.github.io/assets/Inicio-full.webp">
     <meta property="og:url" content="https://sivlemx.github.io/">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:locale" content="es_ES">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -47,13 +48,15 @@
      }
      </script>
 
-     <link rel="stylesheet" href="styles.min.css">
+     <!-- Preload + stylesheet -->
+     <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+     <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
     
 </head>
 <body>
     <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
     <div class="container">
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="index.html" aria-current="page">Inicio</a></li>
                 <li><a href="semblanza.html">Semblanza</a></li>
@@ -77,12 +80,17 @@
             </div>
             <div>
                 <picture>
-                  <source srcset="/assets/Inicio-full.webp" type="image/webp">
+                  <!-- WebP primero -->
+                  <source 
+                    srcset="/assets/Inicio-full.webp" 
+                    type="image/webp"
+                    sizes="(max-width: 1024px) 100vw, 960px">
+                  <!-- Fallback JPEG/PNG -->
                   <img
                     src="/assets/img/javier-hero.jpg" 
                     alt="Javier Villanueva-Valle presentando en congreso" 
                     width="960" height="540"
-                    loading="lazy" decoding="async" fetchpriority="high"
+                    loading="eager" decoding="async" fetchpriority="high"
                     style="max-width:100%;height:auto;border-radius:12px;">
                 </picture>  
             </div>
