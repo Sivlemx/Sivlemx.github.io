@@ -51,6 +51,14 @@
      <!-- Preload + stylesheet -->
      <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
      <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
+
+     <!-- Pon esto en el <head>, debajo del preload del CSS -->
+     <link rel="preload"
+           as="image"
+           href="/assets/Inicio-full.webp"
+           imagesrcset="/assets/Inicio-full.webp"
+           imagesizes="(max-width: 1024px) 100vw, 960px"
+           type="image/webp">
     
 </head>
 <body>
