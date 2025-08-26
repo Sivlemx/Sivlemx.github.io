@@ -32,10 +32,18 @@ nav{
   background:var(--color-principal);
   padding:.8rem 1rem;
   margin-bottom:1.2rem;
+}
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
   display:flex;
   flex-wrap:wrap;
   gap:.8rem;
   justify-content:center;
+}
+nav li{
+  margin:0;
 }
 nav a{
   color:#fff;
