@@ -26,7 +26,7 @@
 ## Performance
 - [ ] Optimizar `Inicio.jpeg` (versión webp + tamaños responsivos, `loading="lazy"` donde aplique).
 - [ ] Preload de imágenes críticas si el LCP es alto.
-- [ ] Minificar `styles.css` en build de producción.
+- [x] Minificar `styles.css` en build de producción generando `styles.min.css`.
 
 ## UX de contacto
 - [ ] Añadir **consentimiento de privacidad** corto con enlace a Aviso de Privacidad.
