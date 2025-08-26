@@ -201,6 +201,21 @@ button:focus {
   outline-offset: 2px;
 }
 
+/* Enlace para saltar al contenido */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-principal);
+  color: #fff;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  z-index: 1000;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 /* Imágenes: si agregas más, recuerda poner loading="lazy" en el HTML */
 .inicio-img { max-width: 100%; height: auto; display: block; }
 
