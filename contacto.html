@@ -22,9 +22,18 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Preconnect para dominios externos -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://formspree.io">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://formspree.io">
 
   <!-- SEO -->
   <meta name="description" content="Contacto directo, perfiles académicos y redes de Javier Villanueva‑Valle.">
+  <link rel="canonical" href="https://sivlemx.github.io/contacto.html">
+  <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Web Page -->
   <meta property="og:type" content="website">
@@ -85,7 +94,7 @@
 
                 <button type="submit">Enviar</button>
             </form>
-            <div id="formStatus" role="status" aria-live="polite" style="margin-top:.6rem"></div>
+            <div id="formStatus" role="status" aria-live="polite"></div>
             <p class="form-note">Todas las consultas serán atendidas mediante este formulario.</p>
         </section>
         </main>

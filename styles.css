@@ -205,7 +205,45 @@ ul li{margin:.3rem 0}
   box-shadow:0 0 0 3px rgba(0,166,166,.15);
   outline:none
 }
+.contact-form input.valid,.contact-form textarea.valid{
+  border-color:#10b981;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2310b981'%3E%3Cpath d='M13.5 3L6 10.5 2.5 7'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right .75rem center;
+  background-size:1rem;
+  padding-right:2.5rem;
+}
+.contact-form input.invalid,.contact-form textarea.invalid{
+  border-color:#ef4444;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ef4444'%3E%3Cpath d='M4 4l8 8M12 4l-8 8'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right .75rem center;
+  background-size:1rem;
+  padding-right:2.5rem;
+}
 .form-note{font-size:.92rem; color:#666}
+.form-status{
+  padding:.75rem 1rem;
+  border-radius:8px;
+  margin-top:.6rem;
+  font-weight:600;
+  transition:opacity .3s;
+}
+.form-status.success{
+  background:#d1fae5;
+  color:#065f46;
+  border:1px solid #10b981;
+}
+.form-status.error{
+  background:#fee2e2;
+  color:#991b1b;
+  border:1px solid #ef4444;
+}
+.form-status.loading{
+  background:#dbeafe;
+  color:#1e40af;
+  border:1px solid #3b82f6;
+}
 
 /* ========= RESPONSIVE ========= */
 @media (max-width: 880px){
@@ -251,3 +289,50 @@ button:focus {
   color: #374151;
 }
 .site-footer a { text-decoration: underline; }
+
+/* ========= MODO OSCURO ========= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-principal: #1e5a8e;
+    --color-acento: #4fd1c5;
+    --color-fondo: #0f1419;
+    --color-texto: #e8eaed;
+    --color-borde: #2d3748;
+  }
+
+  body {
+    background: var(--color-fondo);
+    color: var(--color-texto);
+  }
+
+  nav {
+    background: #1a202c;
+  }
+
+  .publication, .research-topic, .timeline-item {
+    background: #1a202c;
+    border-color: var(--color-borde);
+  }
+
+  .contact-form input, .contact-form textarea {
+    background: #1a202c;
+    color: var(--color-texto);
+    border-color: var(--color-borde);
+  }
+
+  .site-footer {
+    border-top-color: var(--color-borde);
+    color: #a0aec0;
+  }
+
+  .boton-secundario, .btn-sec {
+    background: #1a202c;
+    border-color: var(--color-acento);
+    color: var(--color-acento);
+  }
+
+  .boton-secundario:hover, .btn-sec:hover {
+    background: var(--color-acento);
+    color: #0f1419;
+  }
+}
