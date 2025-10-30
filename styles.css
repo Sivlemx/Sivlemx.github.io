@@ -205,6 +205,20 @@ ul li{margin:.3rem 0}
   box-shadow:0 0 0 3px rgba(0,166,166,.15);
   outline:none
 }
+.contact-form div{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+}
+.contact-form input[type="checkbox"]{
+  width:auto;
+  margin:0;
+}
+.contact-form label[for="privacy"]{
+  font-weight:normal;
+  font-size:.9rem;
+  color:var(--color-texto);
+}
 .contact-form input.valid,.contact-form textarea.valid{
   border-color:#10b981;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2310b981'%3E%3Cpath d='M13.5 3L6 10.5 2.5 7'/%3E%3C/svg%3E");
