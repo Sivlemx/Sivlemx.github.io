@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Inicio - Javier Villanueva-Valle</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Inicio - Javier Villanueva-Valle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7P8MGNMXN7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-7P8MGNMXN7');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7P8MGNMXN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Favicons -->
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#0f172a">
+    gtag('config', 'G-7P8MGNMXN7');
+  </script>
 
-    <!-- Preconnect para dominios externos -->
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f172a">
 
-    <!-- Básicos -->
-    <meta name="description" content="Investigador en Neurociencias de la Conducta. Psicopatología, etología humana y ciencia de datos.">
-    <link rel="canonical" href="https://sivlemx.github.io/">
+  <!-- Preconnect para dominios externos -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
-    <!-- Open Graph / Twitter -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Javier Villanueva-Valle">
-    <meta property="og:description" content="Neurociencias de la Conducta · Psicopatología · Datos. Exploro lo que se revela entre líneas en la experiencia emocional.">
-    <meta property="og:image" content="https://sivlemx.github.io/assets/Inicio-full.webp">
-    <meta property="og:url" content="https://sivlemx.github.io/">
-    <meta property="og:locale" content="es_ES">
+  <!-- Básicos -->
+  <meta name="description"
+    content="Investigador en Neurociencias de la Conducta. Psicopatología, etología humana y ciencia de datos.">
+  <link rel="canonical" href="https://sivlemx.github.io/index.html">
+  <link rel="alternate" hreflang="es" href="https://sivlemx.github.io/index.html">
+  <link rel="alternate" hreflang="en" href="https://sivlemx.github.io/en/index.html">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Javier Villanueva-Valle">
-    <meta name="twitter:description" content="Investigador en Neurociencias de la Conducta.">
-    <meta name="twitter:image" content="https://sivlemx.github.io/assets/Inicio-full.webp">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Javier Villanueva-Valle">
+  <meta property="og:description"
+    content="Neurociencias de la Conducta · Psicopatología · Datos. Exploro lo que se revela entre líneas en la experiencia emocional.">
+  <meta property="og:image" content="https://sivlemx.github.io/assets/img/Inicio-full.webp">
+  <meta property="og:url" content="https://sivlemx.github.io/">
+  <meta property="og:locale" content="es_ES">
 
-    <!-- Datos estructurados -->
-    <script type="application/ld+json">   
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Javier Villanueva-Valle">
+  <meta name="twitter:description" content="Investigador en Neurociencias de la Conducta.">
+  <meta name="twitter:image" content="https://sivlemx.github.io/assets/img/Inicio-full.webp">
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
     {
       "@context":"https://schema.org",
       "@type":"Person",
@@ -63,66 +68,65 @@
      }
      </script>
 
-     <!-- Preload + stylesheet -->
-     <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-     <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
+  <!-- Preload + stylesheet -->
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="styles.css">
+  </noscript>
 
-     <!-- Pon esto en el <head>, debajo del preload del CSS -->
-     <link rel="preload"
-           as="image"
-           href="/assets/Inicio-full.webp"
-           imagesrcset="/assets/Inicio-full.webp"
-           imagesizes="(max-width: 1024px) 100vw, 960px"
-           type="image/webp">
-    
+  <!-- Pon esto en el <head>, debajo del preload del CSS -->
+  <link rel="preload" as="image" href="assets/img/Inicio-full.webp" imagesrcset="assets/img/Inicio-full.webp"
+    imagesizes="(max-width: 1024px) 100vw, 960px" type="image/webp">
+
 </head>
-<body>
-    <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
-    <div class="container">
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="index.html" aria-current="page">Inicio</a></li>
-                <li><a href="semblanza.html">Semblanza</a></li>
-                <li><a href="publicaciones.html">Publicaciones</a></li>
-                <li><a href="investigacion.html">Investigación</a></li>
-                <li><a href="trayectoria.html">Trayectoria</a></li>
-                <li><a href="curso-python.html">Curso Python</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
 
-        <main id="contenido-principal">
-        <header class="inicio-flex">
-            <div class="inicio-texto">
-                <h1>Javier Villanueva-Valle</h1>
-                <p>
-                    Investigador en Neurociencias de la Conducta y Doctor en Psicología por la UNAM.  
-                    Exploro la intersección entre la psicopatología, la etología humana y la ciencia de datos para comprender lo que se revela <em>entre líneas</em> en la experiencia emocional.  
-                    Mi objetivo: transformar la medición científica en una herramienta que sirva a la complejidad humana, sin reducirla.
-                </p>
-                <a href="semblanza.html">Descubre más sobre mi trabajo...</a>
-            </div>
-            <div>
-                <picture>
-                  <!-- WebP primero -->
-                  <source 
-                    srcset="/assets/Inicio-full.webp" 
-                    type="image/webp"
-                    sizes="(max-width: 1024px) 100vw, 960px">
-                  <!-- Fallback JPEG/PNG -->
-                  <img
-                    src="/assets/img/javier-hero.jpg" 
-                    alt="Javier Villanueva-Valle presentando en congreso" 
-                    width="960" height="540"
-                    loading="eager" decoding="async" fetchpriority="high"
-                    style="max-width:100%;height:auto;border-radius:12px;">
-                </picture>  
-            </div>
-        </header>
-        </main>
-    </div>
-<footer class="site-footer">
-  <p>© 2025 Javier Villanueva‑Valle · <a href="contacto.html">Contacto</a></p>
-</footer>
+<body>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+  <div class="container">
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="semblanza.html">Semblanza</a></li>
+        <li><a href="publicaciones.html">Publicaciones</a></li>
+        <li><a href="investigacion.html">Investigación</a></li>
+        <li><a href="trayectoria.html">Trayectoria</a></li>
+        <li><a href="curso-python.html">Curso Python</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <strong>ES</strong> | <a href="en/index.html" lang="en" hreflang="en">EN</a>
+      </div>
+    </nav>
+
+    <main id="contenido-principal">
+      <header class="inicio-flex">
+        <div class="inicio-texto">
+          <h1>Javier Villanueva-Valle</h1>
+          <p>
+            Investigador en Neurociencias de la Conducta y Doctor en Psicología por la UNAM.
+            Exploro la intersección entre la psicopatología, la etología humana y la ciencia de datos para comprender lo
+            que se revela <em>entre líneas</em> en la experiencia emocional.
+            Mi objetivo: transformar la medición científica en una herramienta que sirva a la complejidad humana, sin
+            reducirla.
+          </p>
+          <a href="semblanza.html">Descubre más sobre mi trabajo...</a>
+        </div>
+        <div>
+          <picture>
+            <!-- WebP primero -->
+            <source srcset="assets/img/Inicio-full.webp" type="image/webp" sizes="(max-width: 1024px) 100vw, 960px">
+            <!-- Fallback JPEG/PNG -->
+            <img src="assets/img/javier-hero.jpg" alt="Javier Villanueva-Valle presentando en congreso" width="960"
+              height="540" loading="eager" decoding="async" fetchpriority="high"
+              style="max-width:100%;height:auto;border-radius:12px;">
+          </picture>
+        </div>
+      </header>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>© 2025 Javier Villanueva‑Valle · <a href="contacto.html">Contacto</a></p>
+  </footer>
 </body>
+
 </html>
